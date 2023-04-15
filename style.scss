@@ -1,0 +1,62 @@
+  /** VARIABLES  **/
+  $purple: hsl(273, 85, 13);
+  $green: hsl(150, 100, 63);
+  $gray: hsl(271, 12, 34);
+  $off-white: hsl(276, 100, 99);
+  $white: hsl(0, 0, 100);
+
+/** FONTS **/
+
+@font-face {
+    font-family: fraunces;
+    src: url('fonts/fraunces/Fraunces-VariableFont_SOFT,WONK,opsz,wght.ttf') format("truetype-variations");
+  }
+
+@font-face {
+    font-family: manrope;
+    src: url('fonts/manrope/Manrope-VariableFont_wght.ttf') format("truetype-variations");
+  }
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  html {
+    font-size: 16px;
+
+    @media (min-width: 768px) {
+        font-size: 18px;
+    }
+
+  }
+
+  body {
+    font-size: 1rem;
+    line-height: 1.75em;
+    font-family: manrope, sans-serif;
+    font-weight: 400;
+  }
+
+  .heading-l,
+  .heading-m,
+  .heading-s {
+    font-family: fraunces, serif;
+    font-weight: 600;
+  }
+
+  .heading-l {
+    font-size: 4.44rem;
+    line-height: 1em;
+  }
+
+  .heading-m {
+    font-size: 3.11rem;
+    line-height: 1.14em;
+  }
+
+  .heading-s {
+    font-size: 1.75rem;
+    line-height: 1.25em;
+  }
