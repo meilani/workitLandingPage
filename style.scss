@@ -17,6 +17,8 @@
     src: url('fonts/manrope/Manrope-VariableFont_wght.ttf') format("truetype-variations");
   }
 
+/** GENERAL **/
+
   * {
     margin: 0;
     padding: 0;
@@ -39,16 +41,25 @@
     font-weight: 400;
   }
 
+  a {
+    text-decoration: none;
+  }
+
   .heading-l,
   .heading-m,
   .heading-s {
     font-family: fraunces, serif;
     font-weight: 600;
+    letter-spacing: -2px;
   }
 
   .heading-l {
-    font-size: 4.44rem;
+    font-size: 3.125rem;
     line-height: 1em;
+
+    @media screen and (min-width: 376px) {
+      font-size: 4.44rem;
+    }
   }
 
   .heading-m {
@@ -60,3 +71,111 @@
     font-size: 1.75rem;
     line-height: 1.25em;
   }
+
+  .hidden-text {
+    clip: rect(1px 1px 1px 1px); /* IE 6/7 */
+    clip: rect(1px, 1px, 1px, 1px);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+  }
+
+  .underline {
+    position: relative;
+
+    &::after {
+        content: "";
+        position: absolute;
+        display: block;
+        bottom: -6px;
+        left: -50%;
+        transform: translateX(50%);
+        height: 3px;
+        width: 100%;
+        background-color: $green;
+    } 
+  }
+
+  .btn {
+    color: $purple;
+    background-color: $green;
+    font-weight: 700;
+    text-align: center;
+    display: block;
+    padding: .75rem 1.5rem;
+    margin: 0 auto;
+    width: fit-content;
+    border: 1px solid $green;
+    transition: color .5s ease, background-color .5s ease;
+
+    &:hover {
+      background-color: $purple;
+      color: $green;
+    }
+  }
+
+/** HEADER **/
+
+header {
+    background-color: $purple;
+    padding: 2rem 1rem 4rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    a {
+        color: $white;
+        font-weight: 700;
+        transition: color .5s ease;
+
+        &:hover {
+          color: $green;
+        }
+    }
+}
+
+/** HERO **/
+
+.hero {
+  background-color: $purple;
+  color: $white;
+  text-align: center;
+  position: relative;
+  max-height: 335px;
+
+  .heading-l {
+    margin: 0 auto 2.5rem;
+    max-inline-size: 12ch;
+    text-wrap: balance;
+  }
+
+  .underline {
+    &::after {
+      bottom: 8px;
+    }
+  }
+
+  img {
+    position: relative;
+    z-index: 1;
+    display: block;
+    aspect-ratio: 43 / 23;
+    object-fit: contain;
+    transform: translateY(33%);
+    margin: 0 auto;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    background-color: $purple;
+    width: 100%;
+    height: 6rem;
+    bottom: -2.5rem;   
+    left: -50%;
+    transform: translateX(50%);
+    clip-path: ellipse(55% 22% at 50% 50%);
+  }
+}
