@@ -269,10 +269,43 @@ header a:hover {
 .apply {
   padding: 6.25rem 1rem 1rem;
 }
+@media screen and (min-width: 768px) {
+  .apply {
+    padding: 8.25rem 2.5rem 1rem;
+  }
+}
 .apply .container {
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+@media screen and (min-width: 768px) {
+  .apply .container {
+    justify-content: space-between;
+  }
+}
+.apply .col-1 {
+  aspect-ratio: 1/1;
+  width: 343px;
+  height: auto;
+  margin: 0 auto;
+}
+@media screen and (min-width: 768px) {
+  .apply .col-1 {
+    width: 40%;
+    margin-left: 0;
+  }
+}
+.apply .col-1 img {
+  -o-object-fit: contain;
+     object-fit: contain;
+  width: 343px;
+  height: auto;
+}
+@media screen and (min-width: 768px) {
+  .apply .col-1 img {
+    width: 100%;
+  }
 }
 .apply .col-2 {
   background-color: hsl(273, 85%, 13%);
@@ -281,17 +314,52 @@ header a:hover {
   margin-top: -3rem;
   padding: 1.85rem;
 }
+@media screen and (min-width: 768px) {
+  .apply .col-2 {
+    text-align: left;
+    margin-left: auto;
+    margin-top: -18.75%;
+    width: 75%;
+    height: 375px;
+    padding: 3.5rem 3rem;
+  }
+}
 .apply .heading-m {
   font-size: 2rem;
   margin-bottom: 1rem;
 }
+@media screen and (min-width: 768px) {
+  .apply .heading-m {
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+  }
+}
 .apply p {
   margin-bottom: 1.5rem;
+}
+@media screen and (min-width: 768px) {
+  .apply p {
+    max-width: 405px;
+  }
+}
+.apply .btn {
+  margin: 0 auto 0 0;
 }
 
 /** FOOTER **/
 footer {
   padding: 3.625rem 1rem 4rem;
+}
+@media screen and (min-width: 768px) {
+  footer {
+    background-image: url(./images/bg-pattern-3.svg);
+    background-position: calc(100% - 3.25rem) 2.5rem;
+    background-repeat: no-repeat;
+    padding: 14rem 1rem 4rem;
+    margin-top: -10rem;
+    z-index: 2;
+    position: relative;
+  }
 }
 footer img {
   margin-bottom: 3.625rem;
