@@ -40,6 +40,13 @@ img {
   margin: 0 auto;
 }
 
+svg path {
+  transition: fill 0.5s ease;
+}
+svg path:hover {
+  fill: hsl(273, 85%, 13%);
+}
+
 .heading-l,
 .heading-m,
 .heading-s {
@@ -52,9 +59,9 @@ img {
   font-size: 3.125rem;
   line-height: 1em;
 }
-@media screen and (min-width: 376px) {
+@media screen and (min-width: 768px) {
   .heading-l {
-    font-size: 4.44rem;
+    font-size: 3.33rem;
   }
 }
 
@@ -136,6 +143,11 @@ header {
   justify-content: space-between;
   align-items: center;
 }
+@media screen and (min-width: 768px) {
+  header {
+    padding: 2rem 2rem 3.25rem;
+  }
+}
 header a {
   color: hsl(0, 0%, 100%);
   font-weight: 700;
@@ -152,13 +164,31 @@ header a:hover {
   text-align: center;
   max-height: 335px;
 }
+@media screen and (min-width: 768px) {
+  .hero {
+    background-image: url(./images/bg-pattern-1.svg), url(./images/bg-pattern-2.svg);
+    background-position: -12.75rem -2.25rem, calc(100% + 6rem) 7rem;
+    background-repeat: no-repeat, no-repeat;
+    max-height: 385px;
+  }
+}
 .hero .heading-l {
   margin: 0 auto 2.5rem;
   max-inline-size: 12ch;
   text-wrap: balance;
 }
+@media screen and (min-width: 768px) {
+  .hero .heading-l {
+    margin: 0 auto 2rem;
+  }
+}
 .hero .underline::after {
   bottom: 4px;
+}
+@media screen and (min-width: 768px) {
+  .hero .underline::after {
+    bottom: 8px;
+  }
 }
 .hero img {
   position: relative;
@@ -167,6 +197,13 @@ header a:hover {
   -o-object-fit: contain;
      object-fit: contain;
   transform: translateY(33%);
+}
+@media screen and (min-width: 768px) {
+  .hero img {
+    width: 514px;
+    height: auto;
+    transform: translateY(20%);
+  }
 }
 
 /** INFO **/
@@ -227,4 +264,19 @@ header a:hover {
 }
 .apply p {
   margin-bottom: 1.5rem;
+}
+
+/** FOOTER **/
+footer {
+  padding: 3.625rem 1rem 4rem;
+}
+footer img {
+  margin-bottom: 3.625rem;
+}
+footer ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.75rem;
+  list-style-type: none;
 }/*# sourceMappingURL=style.css.map */

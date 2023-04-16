@@ -50,6 +50,16 @@
     margin: 0 auto;
   }
 
+  svg {
+    path {
+      transition: fill .5s ease;
+
+      &:hover {
+        fill: $purple;
+      }
+    }
+  }
+
   .heading-l,
   .heading-m,
   .heading-s {
@@ -62,8 +72,8 @@
     font-size: 3.125rem;
     line-height: 1em;
 
-    @media screen and (min-width: 376px) {
-      font-size: 4.44rem;
+    @media screen and (min-width: 768px) {
+      font-size: 3.33rem;
     }
   }
 
@@ -147,6 +157,10 @@ header {
     justify-content: space-between;
     align-items: center;
 
+    @media screen and (min-width: 768px) {
+      padding: 2rem 2rem 3.25rem;
+    }
+
     a {
         color: $white;
         font-weight: 700;
@@ -166,15 +180,30 @@ header {
   text-align: center;
   max-height: 335px;
 
+  @media screen and (min-width: 768px) {
+    background-image: url(./images/bg-pattern-1.svg), url(./images/bg-pattern-2.svg);
+    background-position: -12.75rem -2.25rem, calc(100% + 6rem) 7rem;
+    background-repeat: no-repeat, no-repeat;
+    max-height: 385px;
+  }
+
   .heading-l {
     margin: 0 auto 2.5rem;
     max-inline-size: 12ch;
     text-wrap: balance;
+
+    @media screen and (min-width: 768px) {
+      margin: 0 auto 2rem;
+    }
   }
 
   .underline {
     &::after {
       bottom: 4px;
+
+      @media screen and (min-width: 768px) {
+        bottom: 8px;
+      }
     }
   }
 
@@ -184,6 +213,12 @@ header {
     aspect-ratio: 43 / 23;
     object-fit: contain;
     transform: translateY(33%);
+
+    @media screen and (min-width: 768px) {
+      width: 514px;
+      height: auto;
+      transform: translateY(20%);
+    }
   }
 
 
@@ -256,5 +291,21 @@ header {
 
   p {
     margin-bottom: 1.5rem;
+  }
+}
+
+/** FOOTER **/
+
+footer {
+  padding: 3.625rem 1rem 4rem;
+  img {
+    margin-bottom: 3.625rem;
+  }
+  ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.75rem;
+    list-style-type: none;
   }
 }
