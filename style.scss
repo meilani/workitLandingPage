@@ -28,7 +28,7 @@
   html {
     font-size: 16px;
 
-    @media (min-width: 768px) {
+    @media (min-width: 1200px) {
         font-size: 18px;
     }
 
@@ -73,7 +73,7 @@
     line-height: 1em;
 
     @media screen and (min-width: 768px) {
-      font-size: 3.33rem;
+      font-size: 3.75rem;
     }
   }
 
@@ -158,7 +158,7 @@ header {
     align-items: center;
 
     @media screen and (min-width: 768px) {
-      padding: 2rem 2rem 3.25rem;
+      padding: 2.25rem 2.25rem 3.65rem;
     }
 
     a {
@@ -182,7 +182,7 @@ header {
 
   @media screen and (min-width: 768px) {
     background-image: url(./images/bg-pattern-1.svg), url(./images/bg-pattern-2.svg);
-    background-position: -12.75rem -2.25rem, calc(100% + 6rem) 7rem;
+    background-position: -14.34rem -2.53rem, calc(100% + 6.75rem) 7.88rem;
     background-repeat: no-repeat, no-repeat;
     max-height: 385px;
   }
@@ -193,7 +193,7 @@ header {
     text-wrap: balance;
 
     @media screen and (min-width: 768px) {
-      margin: 0 auto 2rem;
+      margin: 0 auto 2.25rem;
     }
   }
 
@@ -231,10 +231,19 @@ header {
   background-color: $off-white;
   color: $purple;
 
+  @media screen and (min-width: 768px) {
+    padding: 12.94rem 1.125rem 5.5rem;
+  }
+
   .card-container {
     display: flex;
     flex-direction: column;
     gap: 2.5rem;
+
+    @media screen and (min-width: 768px) {
+      align-items: center;
+      gap: 3rem;
+    }
   }
 
   .card {
@@ -244,6 +253,13 @@ header {
     text-align: center;
     gap: 1.5rem;
     z-index: 2;
+
+    @media screen and (min-width: 768px) {
+      flex-direction: row;
+      text-align: left;
+      max-width: 560px;
+      gap: 2rem;
+    }
   }
 
   .number {
@@ -254,6 +270,7 @@ header {
     font-weight: 600;
     font-family: fraunces, serif;
     padding: .5rem 1.15rem;
+    text-align: center;
   }
 
   .heading-s {
@@ -262,6 +279,10 @@ header {
 
   &::after {
     background-color: $off-white;
+  }
+
+  p {
+    color: $gray;
   }
 }
 

@@ -18,7 +18,7 @@
 html {
   font-size: 16px;
 }
-@media (min-width: 768px) {
+@media (min-width: 1200px) {
   html {
     font-size: 18px;
   }
@@ -61,7 +61,7 @@ svg path:hover {
 }
 @media screen and (min-width: 768px) {
   .heading-l {
-    font-size: 3.33rem;
+    font-size: 3.75rem;
   }
 }
 
@@ -145,7 +145,7 @@ header {
 }
 @media screen and (min-width: 768px) {
   header {
-    padding: 2rem 2rem 3.25rem;
+    padding: 2.25rem 2.25rem 3.65rem;
   }
 }
 header a {
@@ -167,7 +167,7 @@ header a:hover {
 @media screen and (min-width: 768px) {
   .hero {
     background-image: url(./images/bg-pattern-1.svg), url(./images/bg-pattern-2.svg);
-    background-position: -12.75rem -2.25rem, calc(100% + 6rem) 7rem;
+    background-position: -14.34rem -2.53rem, calc(100% + 6.75rem) 7.88rem;
     background-repeat: no-repeat, no-repeat;
     max-height: 385px;
   }
@@ -179,7 +179,7 @@ header a:hover {
 }
 @media screen and (min-width: 768px) {
   .hero .heading-l {
-    margin: 0 auto 2rem;
+    margin: 0 auto 2.25rem;
   }
 }
 .hero .underline::after {
@@ -212,10 +212,21 @@ header a:hover {
   background-color: hsl(276, 100%, 99%);
   color: hsl(273, 85%, 13%);
 }
+@media screen and (min-width: 768px) {
+  .info {
+    padding: 12.94rem 1.125rem 5.5rem;
+  }
+}
 .info .card-container {
   display: flex;
   flex-direction: column;
   gap: 2.5rem;
+}
+@media screen and (min-width: 768px) {
+  .info .card-container {
+    align-items: center;
+    gap: 3rem;
+  }
 }
 .info .card {
   display: flex;
@@ -224,6 +235,14 @@ header a:hover {
   text-align: center;
   gap: 1.5rem;
   z-index: 2;
+}
+@media screen and (min-width: 768px) {
+  .info .card {
+    flex-direction: row;
+    text-align: left;
+    max-width: 560px;
+    gap: 2rem;
+  }
 }
 .info .number {
   border-radius: 50%;
@@ -234,12 +253,16 @@ header a:hover {
   font-weight: 600;
   font-family: fraunces, serif;
   padding: 0.5rem 1.15rem;
+  text-align: center;
 }
 .info .heading-s {
   margin-bottom: 1rem;
 }
 .info::after {
   background-color: hsl(276, 100%, 99%);
+}
+.info p {
+  color: hsl(271, 12%, 34%);
 }
 
 /** APPLY **/
