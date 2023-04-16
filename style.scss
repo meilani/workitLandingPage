@@ -45,6 +45,11 @@
     text-decoration: none;
   }
 
+  img {
+    display: block;
+    margin: 0 auto;
+  }
+
   .heading-l,
   .heading-m,
   .heading-s {
@@ -176,11 +181,9 @@ header {
   img {
     position: relative;
     z-index: 2;
-    display: block;
     aspect-ratio: 43 / 23;
     object-fit: contain;
     transform: translateY(33%);
-    margin: 0 auto;
   }
 
 
@@ -224,5 +227,34 @@ header {
 
   &::after {
     background-color: $off-white;
+  }
+}
+
+/** APPLY **/
+
+.apply {
+  padding: 6.25rem 1rem 1rem;
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .col-2 {
+    background-color: $purple;
+    color: $white;
+    text-align: center;
+    margin-top: -3rem;
+    padding: 2rem;
+  }
+
+  .heading-m {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+
+  p {
+    margin-bottom: 1.5rem;
   }
 }

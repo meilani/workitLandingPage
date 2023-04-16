@@ -35,6 +35,11 @@ a {
   text-decoration: none;
 }
 
+img {
+  display: block;
+  margin: 0 auto;
+}
+
 .heading-l,
 .heading-m,
 .heading-s {
@@ -158,12 +163,10 @@ header a:hover {
 .hero img {
   position: relative;
   z-index: 2;
-  display: block;
   aspect-ratio: 43/23;
   -o-object-fit: contain;
      object-fit: contain;
   transform: translateY(33%);
-  margin: 0 auto;
 }
 
 /** INFO **/
@@ -200,4 +203,28 @@ header a:hover {
 }
 .info::after {
   background-color: hsl(276, 100%, 99%);
+}
+
+/** APPLY **/
+.apply {
+  padding: 6.25rem 1rem 1rem;
+}
+.apply .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.apply .col-2 {
+  background-color: hsl(273, 85%, 13%);
+  color: hsl(0, 0%, 100%);
+  text-align: center;
+  margin-top: -3rem;
+  padding: 2rem;
+}
+.apply .heading-m {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+.apply p {
+  margin-bottom: 1.5rem;
 }/*# sourceMappingURL=style.css.map */
