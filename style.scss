@@ -74,6 +74,10 @@
     @media screen and (min-width: 768px) {
       font-size: 3.75rem;
     }
+
+    @media screen and (min-width: 1440px) {
+      font-size: 4.44rem;
+    }
   }
 
   .heading-m {
@@ -161,7 +165,7 @@ header {
     }
 
     @media screen and (min-width: 1440px) {
-      padding: 3.22rem 9.16rem 2.65rem;
+      padding: 3.22rem 9.16rem 0rem;
     }
 
     a {
@@ -190,6 +194,12 @@ header {
     max-height: 385px;
   }
 
+  @media screen and (min-width: 1440px) {
+    background-position: -7.34rem 1.47rem, calc(100% + 2.75rem) 9.88rem;
+    padding-top: 2.65rem;
+    max-height: 555px;
+  }
+
   .heading-l {
     margin: 0 auto 2.5rem;
     max-inline-size: 12ch;
@@ -198,6 +208,7 @@ header {
     @media screen and (min-width: 768px) {
       margin: 0 auto 2.25rem;
     }
+
   }
 
   .underline {
@@ -221,6 +232,11 @@ header {
       width: 514px;
       height: auto;
       transform: translateY(20%);
+    }
+
+    @media screen and (min-width: 1440px) {
+      width: 767px;
+      transform: translateY(12%);
     }
   }
 

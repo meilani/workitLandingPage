@@ -64,6 +64,11 @@ svg path:hover {
     font-size: 3.75rem;
   }
 }
+@media screen and (min-width: 1440px) {
+  .heading-l {
+    font-size: 4.44rem;
+  }
+}
 
 .heading-m {
   font-size: 3.11rem;
@@ -150,7 +155,7 @@ header {
 }
 @media screen and (min-width: 1440px) {
   header {
-    padding: 3.22rem 9.16rem 2.65rem;
+    padding: 3.22rem 9.16rem 0rem;
   }
 }
 header a {
@@ -175,6 +180,13 @@ header a:hover {
     background-position: -14.34rem -2.53rem, calc(100% + 6.75rem) 7.88rem;
     background-repeat: no-repeat, no-repeat;
     max-height: 385px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .hero {
+    background-position: -7.34rem 1.47rem, calc(100% + 2.75rem) 9.88rem;
+    padding-top: 2.65rem;
+    max-height: 555px;
   }
 }
 .hero .heading-l {
@@ -208,6 +220,12 @@ header a:hover {
     width: 514px;
     height: auto;
     transform: translateY(20%);
+  }
+}
+@media screen and (min-width: 1440px) {
+  .hero img {
+    width: 767px;
+    transform: translateY(12%);
   }
 }
 
