@@ -357,31 +357,40 @@ header {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    max-width: 21.44rem;
+    margin: 0 auto;
 
     @media screen and (min-width: 768px) {
+      max-width: 43rem;
       justify-content: space-between;
+    }
+
+    @media screen and (min-width: 1440px) {
+      max-width: 62rem;
     }
   }
 
   .col-1 {
     aspect-ratio: 1 / 1;
-    width: 343px;
+    width: 82%;
+    max-width: 281px;
     height: auto;
     margin: 0 auto;
 
     @media screen and (min-width: 768px) {
-      width: 40%;
+      width: 41%;
       margin-left: 0;
+    }
+
+    @media screen and (min-width: 1440px) {
+      max-width: unset;
+      width: 42.74%;
     }
 
     img {
       object-fit: contain;
-      width: 343px;
+      width: 100%;
       height: auto;
-
-      @media screen and (min-width: 768px) {
-        width: 100%;
-      }
     }
   }
 
@@ -391,15 +400,40 @@ header {
     text-align: center;
     margin-top: -3rem;
     padding: 1.85rem;
+    position: relative;
 
     @media screen and (min-width: 768px) {
       text-align: left;
-      // aspect-ratio: 514 / 375;
       margin-left: auto;
       margin-top: -18.75%;
       width: 75%;
       height: 375px;
       padding: 3.5rem 3rem;
+    }
+
+    @media screen and (min-width: 1440px) {
+      width: 65.41%;
+      margin-top: -26.75%;
+      height: 413px;
+      padding: 3.55rem;
+    }
+
+    img {
+      display: none;
+
+      @media screen and (min-width: 768px) {
+        display: block;
+        position: absolute;
+        right: 12px;
+        bottom: -112px;
+      }
+
+      @media screen and (min-width: 1440px) {
+        display: block;
+        position: absolute;
+        right: 75px;
+        bottom: -73px;
+      }
     }
   }
 
@@ -411,6 +445,12 @@ header {
       font-size: 3rem;
       margin-bottom: 1.5rem;
     }
+
+    @media screen and (min-width: 1440px) {
+      font-size: 3.11rem;
+      line-height: 1.14em;
+      margin-bottom: 1.78rem;
+    }
   }
 
   p {
@@ -419,10 +459,19 @@ header {
     @media screen and (min-width: 768px) {
       max-width: 405px;
     }
+    @media screen and (min-width: 1440px) {
+      max-width: 590px;
+      line-height: 1.78em;
+      margin-bottom: 1.78rem;
+    }
   }
 
   .btn {
-    margin: 0 auto 0 0;
+    margin: 0 auto;
+
+    @media screen and (min-width: 768px) {
+      margin: 0 auto 0 0;
+    }
   }
 }
 
@@ -432,17 +481,18 @@ footer {
   padding: 3.625rem 1rem 4rem;
 
   @media screen and (min-width: 768px) {
-    background-image: url(./images/bg-pattern-3.svg);
-    background-position: calc(100% - 3.25rem) 2.5rem;
-    background-repeat: no-repeat;
-    padding: 14rem 1rem 7.5rem;
-    margin-top: -10rem;
-    z-index: 2;
-    position: relative;
+    padding: 4rem 1rem 7rem;
+  }
+  @media screen and (min-width: 1440px) {
+    padding: 6.15rem 1rem 5.5rem;
   }
 
   img {
     margin-bottom: 3.625rem;
+
+    @media screen and (min-width: 1440px) {
+      margin-bottom: 3rem;
+    }
   }
   ul {
     display: flex;
